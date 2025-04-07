@@ -1,21 +1,23 @@
 body {
-    background-color: #abf;
-    display:flex;
+    background-color: rgb(171, 241, 158);
+    display: flex;
     align-items: center;
-    justify-items: center;
     justify-content: center;
     width: 100%;
-    font-family: monospace;
+    font-family: 'Courier New', monospace;
     font-size: 18pt;
 }
 
 div {
-    font-size: 90%; /* make every div font-size 10% smaller than its parent's font-size */
+    font-size: 90%;
     margin: 1em;
 }
 
 .title {
     font-weight: bold;
+    text-align: center;
+    font-size: 24pt;
+    color: #333;
 }
 
 .critical {
@@ -23,25 +25,52 @@ div {
 }
 
 #error {
-    font-size: 80%
+    font-size: 80%;
+    color: red;
+    text-align: center;
 }
 
 .form {
-    display:grid;
-    align-items: end;
-    justify-items: end;
+    display: grid;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr 1fr;
     row-gap: 0.5em;
+    max-width: 400px;
 }
 
 #frame {
     background-color: #eee;
     border-radius: 1em;
     border: solid 1px gray;
-    padding: 1em;
+    padding: 2em;
+    width: 90%;
+    max-width: 600px;
 }
 
 .hidden {
-    display: none
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
