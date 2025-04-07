@@ -1,0 +1,47 @@
+body {
+    background-color: #abf;
+    display:flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: monospace;
+    font-size: 18pt;
+}
+
+div {
+    font-size: 90%; /* make every div font-size 10% smaller than its parent's font-size */
+    margin: 1em;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.critical {
+    color: red;
+}
+
+#error {
+    font-size: 80%
+}
+
+.form {
+    display:grid;
+    align-items: end;
+    justify-items: end;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 0.5em;
+}
+
+#frame {
+    background-color: #eee;
+    border-radius: 1em;
+    border: solid 1px gray;
+    padding: 1em;
+}
+
+.hidden {
+    display: none
+}

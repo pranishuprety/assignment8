@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="frame">
+
+            <div class="title">Welcome to our social!</div>
+
+            <div id="main">
+
+                <div id="loginScreen">
+                    <div class="form">
+                        Username: <input type="text" id="loginUsername">
+                        Password: <input type="password" id="loginPassword">
+                        <span></span>
+                        <button id="loginBtn">Sign In</button>
+                    </div>
+                    <hr>
+                    <div>
+                        Don't have an account?
+                        Click <a href="#" id="registerLink">here</a> to register.
+                    </div>
+                </div>
+
+                <div id="registerScreen" class="hidden">
+                    <div class="form">
+                        Username: <input type="text" id="registerUsername">
+                        Password: <input type="password" id="registerPassword">
+                        Name: <input type="text" id="registerName">
+                        Email: <input type="email" id="registerEmail">
+                        <span></span>
+                        <button id="registerBtn">Register</button>
+                    </div>
+                    <hr>
+                    <div>
+                        Already have an account?
+                        Click <a href="#" id="loginLink">here</a> to log in.
+                    </div>
+                </div>
+
+                <div id="homeScreen" class="hidden">
+                    Welcome <span id="name"></span>!
+                    <div>
+                        Click <a href="#" id="logoutLink">here</a> to log out.
+                    </div>
+                    <hr>
+                    Username: <span id="username"></span>
+                    <div class="form">
+                        Name: <input type="text" id="updateName">
+                        Email: <input type="email" id="updateEmail">
+                        <span></span>
+                        <button id="updateBtn">Update My Information</button>
+                        <span></span>
+                        <button id="deleteBtn" class="critical">Delete My Profile</button>
+                    </div>
+                    <hr>
+                    Here's the current list of users on our social:
+                    <div id="userlist"></div>
+                </div>
+
+            </div>
+
+            <div id="error" class="critical"></div>
+
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
